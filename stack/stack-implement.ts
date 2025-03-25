@@ -18,4 +18,15 @@ class ArrayStack<T> implements IStack<T> {
     return this.data.length;
   }
 }
-export {};
+// const stack1 = new ArrayStack<String>();
+// stack1.push("aaa");
+// stack1.push("bbb");
+// stack1.push("ccc");
+// console.log(stack1.size());
+// stack1.pop();
+// stack1.pop();
+// console.log(stack1.peek());
+// stack1.pop();
+// console.log(stack1.isEmpty());
+
+export { ArrayStack };
