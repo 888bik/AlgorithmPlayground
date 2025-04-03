@@ -7,10 +7,10 @@ class Pair {
   }
 }
 class ArrayHashMap {
-  private readonly buckets: (Pair | null)[];
+  public readonly buckets: (Pair | null)[];
   constructor() {
     //初始化数组
-    this.buckets = new Array(100).fill(null);
+    this.buckets = new Array(10).fill(null);
   }
 
   //哈希函数
@@ -77,9 +77,14 @@ class ArrayHashMap {
 const map = new ArrayHashMap();
 map.set(123, "java");
 map.set(124, "c++");
-map.delete(123);
+map.set(1234, "javaScript");
 map.set(125, "rust");
-console.log(map.keys());
-console.log(map.values());
-console.log(map.entries());
-map.print();
+map.set(1236, "typeScript");
+map.set(1238, "python");
+// map.delete(123);
+// console.log(map.keys());
+// console.log(map.values());
+// console.log(map.entries());
+// map.print();
+console.log(map.buckets);
+export {};
