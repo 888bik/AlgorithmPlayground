@@ -137,22 +137,23 @@ linkedList.append("aaa");
 linkedList.append("bbb");
 linkedList.append("ccc");
 linkedList.append("abc");
-linkedList.traverse();
+// linkedList.traverse();
 
 linkedList.insert("cba", 2);
 linkedList.traverse();
 
-linkedList.removeAt(1);
+console.log(linkedList.removeAt(1));
+console.log(linkedList.removeAt(1));
 linkedList.traverse();
 
-console.log(linkedList.get(3));
+// console.log(linkedList.get(3));
 
 linkedList.update("xxx", 0);
-linkedList.traverse();
+// linkedList.traverse();
 linkedList.update("yyy", 3);
-linkedList.traverse();
+// linkedList.traverse();
 
-console.log(linkedList.indexOf("yyy"));
-console.log(linkedList.indexOf("xxx"));
-console.log(linkedList.indexOf("ddddd"));
+// console.log(linkedList.indexOf("yyy"));
+// console.log(linkedList.indexOf("xxx"));
+// console.log(linkedList.indexOf("ddddd"));
 export { LinkedList };
